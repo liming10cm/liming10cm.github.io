@@ -312,7 +312,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.4k
                 </div>
                 
 
@@ -386,6 +386,8 @@ deploy:
   type: <span class="token function">git</span>
   repo: git@github.com:xxxxxx/xxxxxx.github.io.git
   branch: main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>编写一篇文章<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token string">"[文章名称]"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+会在hexo&#x2F;source&#x2F;_post&#x2F;目录下生成[文章名称].md。如果使用hexo的发布机制，需要学习markdown的几个简单语法，比如标题，代码块等等，还有很多高级功能需要自己去发现，学习，使用。</li>
 <li>发布<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 注意最后变成d了，原来的s表示服务起在本地，现在的d表示部署在远端</span>
 hexo g <span class="token operator">&amp;&amp;</span> hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ol>
@@ -432,6 +434,7 @@ prismjs:
   tab_replace: <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>效果就是当前网页显示的效果,highlight.js 默认开启，用作 Hexo 的服务端高亮组件。如果你需要在浏览器端运行 highlight.js，请把它关闭。<br>PrismJS 默认禁用。启用 PrismJS 前应设置 highlight.enable 为 false。<br>Hexo 内建的 PrismJS 支持浏览器端高亮（preprocess 设置为 false）和服务器端高亮（preprocess 设置为 true）两种方式。<br>使用服务器端高亮时（preprocess 设置为 true），只需要在站点引入 Prismjs 的主题（CSS 样式表）即可；而使用浏览器端高亮时（preprocess 设置为 false），需要将 JavaScript 文件也引入。</p>
 <p><a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">valine使用方法</a></p>
+<h2 id="个人总结体会"><a href="#个人总结体会" class="headerlink" title="个人总结体会"></a>个人总结体会</h2><p>主题的配置主要参考主题的readMe文档，而博客网站的配置主要是hexo目录下的_config.yml文件的修改。</p>
 <h2 id="参考-友情链接"><a href="#参考-友情链接" class="headerlink" title="参考(友情链接)"></a>参考(友情链接)</h2><p>因为文章主要是为了做一个记录，所以不是很详尽，如果有不明白处，可以联系本人，也可以访问<br><a target="_blank" rel="noopener" href="https://yushuaige.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">半亩方塘-博客搭建</a></p>
 
                 
