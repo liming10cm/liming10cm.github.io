@@ -315,14 +315,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    304
+                    548
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -348,7 +348,7 @@
                 <h2 id="hexo框架搭建"><a href="#hexo框架搭建" class="headerlink" title="hexo框架搭建"></a>hexo框架搭建</h2><p>待补充</p>
 <h2 id="在github上搭建"><a href="#在github上搭建" class="headerlink" title="在github上搭建"></a>在github上搭建</h2><p>待补充</p>
 <h2 id="在gittee上搭建"><a href="#在gittee上搭建" class="headerlink" title="在gittee上搭建"></a>在gittee上搭建</h2><p>待补充</p>
-<h2 id="主题相关配置"><a href="#主题相关配置" class="headerlink" title="主题相关配置"></a>主题相关配置</h2><h3 id="markdown的完美支持"><a href="#markdown的完美支持" class="headerlink" title="markdown的完美支持"></a>markdown的完美支持</h3><p>到这里，会发现使用markdown编写的文章，与注释相关的显示会不正常，此时就需要参考主题文件下的_config.yml文件提到的<br>bash</p>
+<h2 id="主题相关配置"><a href="#主题相关配置" class="headerlink" title="主题相关配置"></a>主题相关配置</h2><h3 id="markdown的完美支持"><a href="#markdown的完美支持" class="headerlink" title="markdown的完美支持"></a>markdown的完美支持</h3><p>到这里，会发现使用markdown编写的文章，与注释相关的显示会不正常，此时就需要参考主题文件下的_config.yml文件提到的</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 图表绘制插件</span>
 <span class="token comment"># 建议更换更换hexo-renderer-markdown-it引擎。参考下面链接</span>
 <span class="token comment"># https://github.com/hexojs/hexo-renderer-markdown-it</span>
@@ -375,7 +375,20 @@
 <span class="token comment"># &#123;% endmermaid %&#125;</span>
 <span class="token comment"># mermaid chart。 依赖hexo-tag-mermaid</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>python</p>
+<p>其实我们有看懂上面的说明，那个使用教程说的很多，并没有解决所遇到的问题，但是找到了其他的办法：<br>修改hexo目录（非主题目录）下的_config.yml文件,将highlight enable设置为false，prismjs enable设置为true</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">highlight:
+  enable: <span class="token boolean">false</span>
+  line_number: <span class="token boolean">true</span>
+  auto_detect: <span class="token boolean">false</span>
+  tab_replace: <span class="token string">''</span>
+  wrap: <span class="token boolean">true</span>
+  hljs: <span class="token boolean">false</span>
+prismjs:
+  enable: <span class="token boolean">true</span>
+  preprocess: <span class="token boolean">true</span>
+  line_number: <span class="token boolean">true</span>
+  tab_replace: <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>效果就是当前网页显示的效果,highlight.js 默认开启，用作 Hexo 的服务端高亮组件。如果你需要在浏览器端运行 highlight.js，请把它关闭。<br>PrismJS 默认禁用。启用 PrismJS 前应设置 highlight.enable 为 false。<br>Hexo 内建的 PrismJS 支持浏览器端高亮（preprocess 设置为 false）和服务器端高亮（preprocess 设置为 true）两种方式。<br>使用服务器端高亮时（preprocess 设置为 true），只需要在站点引入 Prismjs 的主题（CSS 样式表）即可；而使用浏览器端高亮时（preprocess 设置为 false），需要将 JavaScript 文件也引入。</p>
 <pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">#!&#x2F;usr&#x2F;bin&#x2F;env python
 # -*- coding: utf-8 -*-
 print &#39;Hello World! <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
