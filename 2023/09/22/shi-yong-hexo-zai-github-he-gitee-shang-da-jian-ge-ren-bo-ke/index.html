@@ -312,14 +312,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    879
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -371,7 +371,24 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <span class="token comment">#theme: butterfly</span>
 theme: matery<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ol>
-<h2 id="在github上搭建"><a href="#在github上搭建" class="headerlink" title="在github上搭建"></a>在github上搭建</h2><p>待补充</p>
+<h2 id="2-在github上搭建"><a href="#2-在github上搭建" class="headerlink" title="2 在github上搭建"></a>2 在github上搭建</h2><h3 id="2-1-注册github"><a href="#2-1-注册github" class="headerlink" title="2.1 注册github"></a>2.1 注册github</h3><p>官网 github.com，速度比较慢。</p>
+<h3 id="2-2-创建github-pages仓库"><a href="#2-2-创建github-pages仓库" class="headerlink" title="2.2 创建github pages仓库"></a>2.2 创建github pages仓库</h3><p>pages仓库也是一个普通的仓库，但是有个特别的地方需要注意<br>仓库：&lt;用户名&gt;.github.io<br>属性必须是public。<br>其他创建过程与创建普通仓库一样。</p>
+<h3 id="2-3-测试github-pages页面"><a href="#2-3-测试github-pages页面" class="headerlink" title="2.3 测试github pages页面"></a>2.3 测试github pages页面</h3><ol>
+<li>在仓库目录下创建一个index.html文件，内容如下<pre class="line-numbers language-none"><code class="language-none">&lt;h1&gt;hello my blog !&lt;&#x2F;h1&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>浏览器打开https:&#x2F;&#x2F;&lt;你的用户名&gt;.github.io,可以查看到hello my blog !字样，即说明github pages 仓库搭建成功。</li>
+</ol>
+<h3 id="2-4-github-pages发布"><a href="#2-4-github-pages发布" class="headerlink" title="2.4 github pages发布"></a>2.4 github pages发布</h3><h4 id="2-4-1-手动发布"><a href="#2-4-1-手动发布" class="headerlink" title="2.4.1 手动发布"></a>2.4.1 手动发布</h4><p>如果你是前端的开发人员，就可以直接将github远程仓库的代码跟本地关联</p>
+<h4 id="2-4-2-hexo自动发布"><a href="#2-4-2-hexo自动发布" class="headerlink" title="2.4.2 hexo自动发布"></a>2.4.2 hexo自动发布</h4><p>利用hexo的发布插件，我们只需要修改markdown格式的文档，hexo将自动装换位静态网页。</p>
+<ol>
+<li>安装插件<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>配置 hexo目录下_config.yml文件<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 其中 xxxxxx 是前面多次用到的你的GitHub用户名</span>
+deploy:
+  type: <span class="token function">git</span>
+  repo: git@github.com:xxxxxx/xxxxxx.github.io.git
+  branch: main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>发布<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 注意最后变成d了，原来的s表示服务起在本地，现在的d表示部署在远端</span>
+hexo g <span class="token operator">&amp;&amp;</span> hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+</ol>
 <h2 id="在gittee上搭建"><a href="#在gittee上搭建" class="headerlink" title="在gittee上搭建"></a>在gittee上搭建</h2><p>待补充</p>
 <h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><h3 id="markdown的完美支持"><a href="#markdown的完美支持" class="headerlink" title="markdown的完美支持"></a>markdown的完美支持</h3><p>到这里，会发现使用markdown编写的文章，与注释相关的显示会不正常，此时就需要参考主题文件下的_config.yml文件提到的</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 图表绘制插件</span>
@@ -415,6 +432,7 @@ prismjs:
   tab_replace: <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>效果就是当前网页显示的效果,highlight.js 默认开启，用作 Hexo 的服务端高亮组件。如果你需要在浏览器端运行 highlight.js，请把它关闭。<br>PrismJS 默认禁用。启用 PrismJS 前应设置 highlight.enable 为 false。<br>Hexo 内建的 PrismJS 支持浏览器端高亮（preprocess 设置为 false）和服务器端高亮（preprocess 设置为 true）两种方式。<br>使用服务器端高亮时（preprocess 设置为 true），只需要在站点引入 Prismjs 的主题（CSS 样式表）即可；而使用浏览器端高亮时（preprocess 设置为 false），需要将 JavaScript 文件也引入。</p>
 <p><a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">valine使用方法</a></p>
+<h2 id="参考-友情链接"><a href="#参考-友情链接" class="headerlink" title="参考(友情链接)"></a>参考(友情链接)</h2><p>因为文章主要是为了做一个记录，所以不是很详尽，如果有不明白处，可以联系本人，也可以访问<br><a target="_blank" rel="noopener" href="https://yushuaige.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">半亩方塘-博客搭建</a></p>
 
                 
             </div>
