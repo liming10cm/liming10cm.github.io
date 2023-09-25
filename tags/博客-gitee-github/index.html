@@ -313,28 +313,19 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="使用说明" style="background-color: #F9EBEA;">使用说明
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%83%85%E7%BB%AA/" title="情绪: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="情绪" style="background-color: #F5EEF8;">情绪
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/%E5%8D%9A%E5%AE%A2-gitee-github/" title="博客  gitee  github: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="博客  gitee  github" style="background-color: #D5F5E3;">博客  gitee  github
+                            data-tagname="博客  gitee  github" style="background-color: #F9EBEA;">博客  gitee  github
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="使用说明: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="使用说明" style="background-color: #F5EEF8;">使用说明
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -343,7 +334,16 @@
                 <a href="/tags/%E9%9A%8F%E7%AC%94/" title="随笔: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="随笔" style="background-color: #E8F8F5;">随笔
+                            data-tagname="随笔" style="background-color: #D5F5E3;">随笔
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%83%85%E7%BB%AA/" title="情绪: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="情绪" style="background-color: #E8F8F5;">情绪
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -373,7 +373,7 @@
                     <div class="card-content article-content">
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-22 00:00:00
                             </span>
                             <span class="publish-author">
                                 
@@ -726,6 +726,15 @@ $(function () {
     
     
     
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
 
     <!-- 雪花特效 -->
     
@@ -733,39 +742,11 @@ $(function () {
     <!-- 鼠标星星特效 -->
     
 
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
     <!-- Baidu Analytics -->
 
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
     <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
     
     <script src="/libs/others/clicklove.js" async="async"></script>

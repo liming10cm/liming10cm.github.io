@@ -538,7 +538,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"工具使用","value":1},{"name":"心理学","value":1},{"name":"个人博客搭建","value":1},{"name":"日志","value":1}],
+                data: [{"name":"个人博客搭建","value":1},{"name":"工具使用","value":1},{"name":"日志","value":1},{"name":"心理学","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -562,7 +562,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["使用说明","情绪","博客  gitee  github","随笔"]
+                data: ["博客  gitee  github","使用说明","随笔","情绪"]
             }
         ],
         yAxis: [
@@ -745,26 +745,26 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">
-                <span class="chip center-align waves-effect waves-light chip-default">使用说明</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%83%85%E7%BB%AA/">
-                <span class="chip center-align waves-effect waves-light chip-default">情绪</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E5%8D%9A%E5%AE%A2-gitee-github/">
                 <span class="chip center-align waves-effect waves-light chip-default">博客  gitee  github</span>
             </a>
             
             
             
+            <a href="/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">
+                <span class="chip center-align waves-effect waves-light chip-default">使用说明</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E9%9A%8F%E7%AC%94/">
                 <span class="chip center-align waves-effect waves-light chip-default">随笔</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%83%85%E7%BB%AA/">
+                <span class="chip center-align waves-effect waves-light chip-default">情绪</span>
             </a>
             
             
@@ -1157,6 +1157,15 @@ $(function () {
     
     
     
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
 
     <!-- 雪花特效 -->
     
@@ -1164,39 +1173,11 @@ $(function () {
     <!-- 鼠标星星特效 -->
     
 
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
     <!-- Baidu Analytics -->
 
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
     <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
     
     <script src="/libs/others/clicklove.js" async="async"></script>
