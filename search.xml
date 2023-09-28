@@ -4,12 +4,45 @@
   
     
     <entry>
+      <title>关于通勤时间</title>
+      <link href="/2023/09/28/guan-yu-tong-qin-shi-jian/"/>
+      <url>/2023/09/28/guan-yu-tong-qin-shi-jian/</url>
+      
+        <content type="html"><![CDATA[<p>因为家庭原因，现在的上班通勤方案有两个：</p><ul><li><strong>地铁</strong><br>骑电动车到1.5公里的地铁站，坐地铁11个站，站内转线再坐12个站，再转线坐4个站，到站步行600米，耗时1个小时40分钟。<ul><li>费用 单程9元，合计18元。</li><li>每月费用，18*22 &#x3D; 396</li></ul></li><li><strong>开车</strong><br>开车走高速，7点20之前出门，45分钟左右到公司。<ul><li>高速费16.15，电费算40*0.2 &#x3D; 8元，合计48.3元</li><li>每月费用，48.3*22 &#x3D; 1062.6+停车费300 &#x3D; 1362.6<br>从效率来看，第二种方案节约时间，但是每月多花966.6元；但是从成本考虑第一种更便宜；从安全考虑，地铁最优，而且坐地铁可以选择站着，并有走动，比起驾车可以避免久坐，更健康一些。<br>有幸国庆前，体验了4天坐地铁上下班，如果要做到不迟到，几乎需要7点钟就要出门，如果遇到下雨天，不是很方便。</li></ul></li></ul><p>第一种方式，1年节约通勤费：11599.2元。<br>第二种方式，1年节约通勤时间：528个小时。<br>这算下来，相当于花22元购买1个小时的时间。</p><p>关于通勤时间的利用<br>地铁，在地铁上有1个小时可以用来看书，不能用来听书，地铁运行期间太嘈杂；适合进行沉思。<br>驾车，可以利用40分钟时间听书，可能有安全隐患；不太适合深度思考问题。</p><p>如何抉择，权衡之下，决定选择地铁通勤。当然最好的办法是找一个离家近的公司。最最好的办法是早日实现财务自由。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 工作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>那些专用于nandflash的文件系统</title>
       <link href="/2023/09/27/na-xie-zhuan-yong-yu-nandflash-de-wen-jian-xi-tong/"/>
       <url>/2023/09/27/na-xie-zhuan-yong-yu-nandflash-de-wen-jian-xi-tong/</url>
       
-        <content type="html"><![CDATA[<p>在嵌入式系统中，使用专门为NAND Flash设计的文件系统可以提高性能和稳定性。以下是一些常用于NAND Flash的专用文件系统：</p><p><strong>YAFFS&#x2F;YAFFS2</strong>（Yet Another Flash File System）：</p><p>YAFFS是一个专为闪存设备（包括NAND Flash）设计的文件系统。它被广泛用于许多嵌入式系统中，并提供了对坏块管理、擦除计数等特性的支持。<br><strong>JFFS2</strong>（Journalling Flash File System 2）：</p><p>JFFS2是一个日志型的文件系统，专门为闪存设备设计，包括NAND Flash。它提供了高效的坏块管理和擦除次数均衡。<br><strong>UBIFS</strong>（UBI File System）：</p><p>UBIFS是一个专为联合闪存设备（UBI）设计的文件系统，UBI是一个闪存管理层，用于管理块和页的映射关系，它支持NAND Flash等设备。<br><strong>F2FS</strong>（Flash-Friendly File System）：</p><p>F2FS是一个专门为闪存设备设计的文件系统，它考虑了闪存的特性，如坏块处理、TRIM支持等，适用于NAND Flash等设备。<br><strong>LogFS</strong>：</p><p>LogFS是一个面向闪存的文件系统，旨在提供高性能和耐用性。它设计用于支持多个闪存芯片，包括NAND Flash。<br><strong>FTL</strong>（Flash Translation Layer）：</p><p>FTL并不是一个文件系统，而是一个适用于NAND Flash的抽象层，它将闪存块和页的概念映射到传统的块和扇区的概念，使得可以在上面运行常规文件系统。<br>这些文件系统中的许多都提供了对NAND Flash特性的专门支持，如坏块管理、TRIM支持等。选择一个适合的文件系统取决于你的具体需求、硬件支持和应用场景。在选择之前，务必详细了解每个文件系统的特性和使用条件。</p>]]></content>
+        <content type="html"><![CDATA[<p>在嵌入式系统中，使用专门为NAND Flash设计的文件系统可以提高性能和稳定性。以下是一些常用于NAND Flash的专用文件系统：</p><h2 id="YAFFS-YAFFS2（Yet-Another-Flash-File-System）："><a href="#YAFFS-YAFFS2（Yet-Another-Flash-File-System）：" class="headerlink" title="YAFFS&#x2F;YAFFS2（Yet Another Flash File System）："></a>YAFFS&#x2F;YAFFS2（Yet Another Flash File System）：</h2><p>YAFFS是一个专为闪存设备（包括NAND Flash）设计的文件系统。它被广泛用于许多嵌入式系统中，并提供了对坏块管理、擦除计数等特性的支持。</p><h2 id="JFFS2（Journalling-Flash-File-System-2）："><a href="#JFFS2（Journalling-Flash-File-System-2）：" class="headerlink" title="JFFS2（Journalling Flash File System 2）："></a>JFFS2（Journalling Flash File System 2）：</h2><p>JFFS2是一个日志型的文件系统，专门为闪存设备设计，包括NAND Flash。它提供了高效的坏块管理和擦除次数均衡。</p><h2 id="UBIFS（UBI-File-System）："><a href="#UBIFS（UBI-File-System）：" class="headerlink" title="UBIFS（UBI File System）："></a>UBIFS（UBI File System）：</h2><p>UBIFS是一个专为联合闪存设备（UBI）设计的文件系统，UBI是一个闪存管理层，用于管理块和页的映射关系，它支持NAND Flash等设备。</p><h2 id="F2FS（Flash-Friendly-File-System）："><a href="#F2FS（Flash-Friendly-File-System）：" class="headerlink" title="F2FS（Flash-Friendly File System）："></a>F2FS（Flash-Friendly File System）：</h2><p>F2FS是一个专门为闪存设备设计的文件系统，它考虑了闪存的特性，如坏块处理、TRIM支持等，适用于NAND Flash等设备。</p><h2 id="LogFS："><a href="#LogFS：" class="headerlink" title="LogFS："></a>LogFS：</h2><p>LogFS是一个面向闪存的文件系统，旨在提供高性能和耐用性。它设计用于支持多个闪存芯片，包括NAND Flash。</p><h2 id="FTL（Flash-Translation-Layer）："><a href="#FTL（Flash-Translation-Layer）：" class="headerlink" title="FTL（Flash Translation Layer）："></a>FTL（Flash Translation Layer）：</h2><p>FTL并不是一个文件系统，而是一个适用于NAND Flash的抽象层，它将闪存块和页的概念映射到传统的块和扇区的概念，使得可以在上面运行常规文件系统。<br>这些文件系统中的许多都提供了对NAND Flash特性的专门支持，如坏块管理、TRIM支持等。选择一个适合的文件系统取决于你的具体需求、硬件支持和应用场景。在选择之前，务必详细了解每个文件系统的特性和使用条件。</p><h2 id="RT-Flashfs"><a href="#RT-Flashfs" class="headerlink" title="RT-Flashfs"></a>RT-Flashfs</h2><p>这是一个由ARM提供的用于嵌入式的系统的文件系统，以库的形式提供，在mdk-keil的中间件中包含。安装对应的middleware pack后，在keil5中可以配置使用。</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 嵌入式开发 </category>
+          
+      </categories>
       
       
         <tags>
@@ -25,12 +58,18 @@
     
     
     <entry>
-      <title>开源项目合集</title>
+      <title>开源操作系统和文件系统</title>
       <link href="/2023/09/27/kai-yuan-xiang-mu-he-ji/"/>
       <url>/2023/09/27/kai-yuan-xiang-mu-he-ji/</url>
       
         <content type="html"><![CDATA[<h2 id="RTX5-CMSIS-RTX"><a href="#RTX5-CMSIS-RTX" class="headerlink" title="RTX5(CMSIS-RTX)"></a><a href="https://github.com/ARM-software/CMSIS-RTX">RTX5(CMSIS-RTX)</a></h2><p>RTX5 real time kernel for Arm Cortex-based embedded systems (spin-off from CMSIS_5)</p><h2 id="CMSIS-FreeRTOS"><a href="#CMSIS-FreeRTOS" class="headerlink" title="CMSIS-FreeRTOS"></a><a href="https://github.com/ARM-software/CMSIS-FreeRTOS">CMSIS-FreeRTOS</a></h2><p>FreeRTOS adaptation for CMSIS-RTOS Version 2</p><h2 id="freeRTOS"><a href="#freeRTOS" class="headerlink" title="freeRTOS"></a><a href="https://github.com/freeRTOS">freeRTOS</a></h2><h2 id="littlefs"><a href="#littlefs" class="headerlink" title="littlefs"></a><a href="https://github.com/littlefs-project/littlefs">littlefs</a></h2><h2 id="QT5"><a href="#QT5" class="headerlink" title="QT5"></a><a href="https://github.com/qt/qt5">QT5</a></h2><h2 id="Azure-RTOS-ThreadX全家桶"><a href="#Azure-RTOS-ThreadX全家桶" class="headerlink" title="Azure RTOS(ThreadX全家桶)"></a><a href="https://github.com/orgs/azure-rtos/repositories">Azure RTOS(ThreadX全家桶)</a></h2><h2 id="RT-thread"><a href="#RT-thread" class="headerlink" title="RT-thread"></a><a href="https://github.com/RT-Thread/rt-thread">RT-thread</a></h2><p>RT-Thread is an open source IoT real-time operating system (RTOS).</p><h2 id="uffs"><a href="#uffs" class="headerlink" title="uffs"></a><a href="https://github.com/rickyzheng/uffs">uffs</a></h2><p>UFFS - Ultra low cost Flash File System</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 嵌入式开发 </category>
+          
+      </categories>
       
       
         <tags>
@@ -55,7 +94,7 @@
       
       <categories>
           
-          <category> 心理学 </category>
+          <category> 随笔 </category>
           
       </categories>
       
@@ -80,7 +119,7 @@
       
       <categories>
           
-          <category> 个人博客搭建 </category>
+          <category> 网站开发 </category>
           
       </categories>
       
@@ -109,14 +148,14 @@
       
       <categories>
           
-          <category> 日志 </category>
+          <category> 随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> 个人博客 </tag>
             
         </tags>
       
@@ -134,7 +173,7 @@
       
       <categories>
           
-          <category> 工具使用 </category>
+          <category> 网站开发 </category>
           
       </categories>
       

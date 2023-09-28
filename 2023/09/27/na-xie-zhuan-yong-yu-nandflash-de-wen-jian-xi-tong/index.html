@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="那些专用于nandflash的文件系统, 天亮了 醒来吧">
     <meta name="description" content="在嵌入式系统中，使用专门为NAND Flash设计的文件系统可以提高性能和稳定性。以下是一些常用于NAND Flash的专用文件系统：
-YAFFS&amp;#x2F;YAFFS2（Yet Another Flash File System）：
-YA">
+YAFFS&amp;#x2F;YAFFS2（Yet Another Flash File System）：YAF">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -306,6 +305,15 @@ YA">
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/" class="post-category">
+                                嵌入式开发
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -320,14 +328,14 @@ YA">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-27
+                    2023-09-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    455
+                    512
                 </div>
                 
 
@@ -358,13 +366,13 @@ YA">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>在嵌入式系统中，使用专门为NAND Flash设计的文件系统可以提高性能和稳定性。以下是一些常用于NAND Flash的专用文件系统：</p>
-<p><strong>YAFFS&#x2F;YAFFS2</strong>（Yet Another Flash File System）：</p>
-<p>YAFFS是一个专为闪存设备（包括NAND Flash）设计的文件系统。它被广泛用于许多嵌入式系统中，并提供了对坏块管理、擦除计数等特性的支持。<br><strong>JFFS2</strong>（Journalling Flash File System 2）：</p>
-<p>JFFS2是一个日志型的文件系统，专门为闪存设备设计，包括NAND Flash。它提供了高效的坏块管理和擦除次数均衡。<br><strong>UBIFS</strong>（UBI File System）：</p>
-<p>UBIFS是一个专为联合闪存设备（UBI）设计的文件系统，UBI是一个闪存管理层，用于管理块和页的映射关系，它支持NAND Flash等设备。<br><strong>F2FS</strong>（Flash-Friendly File System）：</p>
-<p>F2FS是一个专门为闪存设备设计的文件系统，它考虑了闪存的特性，如坏块处理、TRIM支持等，适用于NAND Flash等设备。<br><strong>LogFS</strong>：</p>
-<p>LogFS是一个面向闪存的文件系统，旨在提供高性能和耐用性。它设计用于支持多个闪存芯片，包括NAND Flash。<br><strong>FTL</strong>（Flash Translation Layer）：</p>
-<p>FTL并不是一个文件系统，而是一个适用于NAND Flash的抽象层，它将闪存块和页的概念映射到传统的块和扇区的概念，使得可以在上面运行常规文件系统。<br>这些文件系统中的许多都提供了对NAND Flash特性的专门支持，如坏块管理、TRIM支持等。选择一个适合的文件系统取决于你的具体需求、硬件支持和应用场景。在选择之前，务必详细了解每个文件系统的特性和使用条件。</p>
+<h2 id="YAFFS-YAFFS2（Yet-Another-Flash-File-System）："><a href="#YAFFS-YAFFS2（Yet-Another-Flash-File-System）：" class="headerlink" title="YAFFS&#x2F;YAFFS2（Yet Another Flash File System）："></a>YAFFS&#x2F;YAFFS2（Yet Another Flash File System）：</h2><p>YAFFS是一个专为闪存设备（包括NAND Flash）设计的文件系统。它被广泛用于许多嵌入式系统中，并提供了对坏块管理、擦除计数等特性的支持。</p>
+<h2 id="JFFS2（Journalling-Flash-File-System-2）："><a href="#JFFS2（Journalling-Flash-File-System-2）：" class="headerlink" title="JFFS2（Journalling Flash File System 2）："></a>JFFS2（Journalling Flash File System 2）：</h2><p>JFFS2是一个日志型的文件系统，专门为闪存设备设计，包括NAND Flash。它提供了高效的坏块管理和擦除次数均衡。</p>
+<h2 id="UBIFS（UBI-File-System）："><a href="#UBIFS（UBI-File-System）：" class="headerlink" title="UBIFS（UBI File System）："></a>UBIFS（UBI File System）：</h2><p>UBIFS是一个专为联合闪存设备（UBI）设计的文件系统，UBI是一个闪存管理层，用于管理块和页的映射关系，它支持NAND Flash等设备。</p>
+<h2 id="F2FS（Flash-Friendly-File-System）："><a href="#F2FS（Flash-Friendly-File-System）：" class="headerlink" title="F2FS（Flash-Friendly File System）："></a>F2FS（Flash-Friendly File System）：</h2><p>F2FS是一个专门为闪存设备设计的文件系统，它考虑了闪存的特性，如坏块处理、TRIM支持等，适用于NAND Flash等设备。</p>
+<h2 id="LogFS："><a href="#LogFS：" class="headerlink" title="LogFS："></a>LogFS：</h2><p>LogFS是一个面向闪存的文件系统，旨在提供高性能和耐用性。它设计用于支持多个闪存芯片，包括NAND Flash。</p>
+<h2 id="FTL（Flash-Translation-Layer）："><a href="#FTL（Flash-Translation-Layer）：" class="headerlink" title="FTL（Flash Translation Layer）："></a>FTL（Flash Translation Layer）：</h2><p>FTL并不是一个文件系统，而是一个适用于NAND Flash的抽象层，它将闪存块和页的概念映射到传统的块和扇区的概念，使得可以在上面运行常规文件系统。<br>这些文件系统中的许多都提供了对NAND Flash特性的专门支持，如坏块管理、TRIM支持等。选择一个适合的文件系统取决于你的具体需求、硬件支持和应用场景。在选择之前，务必详细了解每个文件系统的特性和使用条件。</p>
+<h2 id="RT-Flashfs"><a href="#RT-Flashfs" class="headerlink" title="RT-Flashfs"></a>RT-Flashfs</h2><p>这是一个由ARM提供的用于嵌入式的系统的文件系统，以库的形式提供，在mdk-keil的中间件中包含。安装对应的middleware pack后，在keil5中可以配置使用。</p>
 
                 
             </div>
@@ -510,18 +518,17 @@ YA">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/09/27/na-xie-zhuan-yong-yu-nandflash-de-wen-jian-xi-tong/">
+                <a href="/2023/09/28/guan-yu-tong-qin-shi-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="那些专用于nandflash的文件系统">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="关于通勤时间">
                         
-                        <span class="card-title">那些专用于nandflash的文件系统</span>
+                        <span class="card-title">关于通勤时间</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -531,27 +538,30 @@ YA">
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-27
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-28
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            liming
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
+                                    随笔
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">文件系统</span>
+                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
+                        <span class="chip bg-color">生活</span>
                     </a>
                     
-                    <a href="/tags/nandflash/">
-                        <span class="chip bg-color">nandflash</span>
+                    <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                        <span class="chip bg-color">工作</span>
                     </a>
                     
                 </div>
@@ -569,9 +579,9 @@ YA">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="开源项目合集">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="开源操作系统和文件系统">
                         
-                        <span class="card-title">开源项目合集</span>
+                        <span class="card-title">开源操作系统和文件系统</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -586,8 +596,12 @@ YA">
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            liming
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/" class="post-category">
+                                    嵌入式开发
+                                </a>
+                            
                             
                         </span>
                     </div>
