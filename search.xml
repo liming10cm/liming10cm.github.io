@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>markdown基本语法</title>
+      <link href="/2025/02/06/markdown-ji-ben-yu-fa/"/>
+      <url>/2025/02/06/markdown-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<p>Markdown是一种轻量级的标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成结构化的HTML。以下是Markdown主要的语法：</p><h3 id="一、基本语法"><a href="#一、基本语法" class="headerlink" title="一、基本语法"></a>一、基本语法</h3><ol><li><p><strong>标题</strong></p><ul><li>使用<code>#</code>表示标题，<code>#</code>的数量表示标题的级别。例如：<code># 一级标题</code>、<code>## 二级标题</code>。</li><li>也可以使用<code>=</code>和<code>-</code>分别表示一级和二级标题（这种用法不太常见）。</li></ul></li><li><p><strong>段落</strong></p><ul><li>Markdown中段落没有特殊的格式，直接编写文字即可。段落的换行通常需要使用两个空格加上回车，或者在文本之间添加一个空行。</li></ul></li><li><p><strong>字体</strong></p><ul><li>粗体：使用两个<code>**</code>或<code>__</code>将内容包起来，如<code>**粗体文本**</code>或<code>__粗体文本__</code>。</li><li>斜体：使用一个<code>*</code>或<code>_</code>将内容包起来，如<code>*斜体文本*</code>或<code>_斜体文本_</code>。</li><li>粗斜体：使用三个<code>***</code>或<code>___</code>将内容包起来，如<code>***粗斜体文本***</code>或<code>___粗斜体文本___</code>。</li><li>删除线：使用两个<code>~~</code>将内容包起来，如<code>~~删除线文本~~</code>。</li><li>下划线：可以通过HTML标签<code>&lt;u&gt;</code>实现，如<code>&lt;u&gt;带下划线文本&lt;/u&gt;</code>。</li></ul></li><li><p><strong>列表</strong></p><ul><li>无序列表：使用<code>*</code>、<code>+</code>或<code>-</code>符号加上空格来表示。</li><li>有序列表：使用数字加<code>.</code>符号来表示。</li><li>列表还可以进行嵌套，通过在子列表项前添加额外的空格或Tab键来实现。</li></ul></li><li><p><strong>分隔线</strong></p><ul><li>可以使用三个或以上的<code>*</code>、<code>-</code>或<code>_</code>来表示分隔线。</li></ul></li><li><p><strong>链接</strong></p><ul><li>行内形式：<code>[链接文字](链接地址 &quot;标题&quot;)</code>，如<code>[百度](https://www.baidu.com &quot;百度首页&quot;)</code>。</li><li>参考形式：<code>[链接文字][链接名称]</code>，然后在文档末尾添加<code>[链接名称]: 链接地址 &quot;标题&quot;</code>，如<code>[百度][1]</code>和<code>[1]: https://www.baidu.com &quot;百度首页&quot;</code>。</li></ul></li><li><p><strong>图片</strong></p><ul><li>插入图片的语法与链接类似，但需要在前面加上一个<code>!</code>。</li><li>行内形式：<code>![图片描述](图片地址 &quot;图片标题&quot;)</code>。</li><li>参考形式：<code>![图片描述][图片名称]</code>，<code>[图片名称]: 图片地址 &quot;图片标题&quot;</code>。</li></ul></li><li><p><strong>表格</strong></p><ul><li>使用<code>|</code>来分隔不同的单元格，使用<code>-</code>来分隔表头和其他行。</li><li>可以设置表格的对齐方式，如左对齐、居中、右对齐。</li></ul></li><li><p><strong>代码</strong></p><ul><li>单行代码：使用反引号<code>`</code>将代码包裹起来，如<code>`print(&#39;Hello World!&#39;)`</code>。</li><li>代码区块：使用三个反引号<code>```</code>包裹一段代码，并可以指定语言，如：<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul></li><li><p><strong>引用</strong></p><ul><li>使用<code>&gt;</code>符号来表示引用，如：<code>&gt; 这是一个引用</code>。</li><li>还可以进行嵌套引用，如：<code>&gt;&gt; 这是一个嵌套的引用</code>。</li></ul></li><li><p><strong>任务列表</strong></p><ul><li>使用<code>- [ ]</code>表示未完成的任务，使用<code>- [x]</code>表示已完成的任务。</li></ul></li></ol><h3 id="二、扩展语法"><a href="#二、扩展语法" class="headerlink" title="二、扩展语法"></a>二、扩展语法</h3><ol><li><p><strong>数学公式</strong></p><ul><li>行内公式：使用单个<code>$</code>符号包裹公式，例如：<code>$E=mc^2$</code>显示为$E&#x3D;mc^2$。</li><li>独立公式（行间公式）：使用两个<code>$$</code>符号包裹公式，例如：<code>$$E=mc^2$$</code>。<br>$$E&#x3D;mc^2$$</li><li>可以使用<code>\boxed</code>命令给公式加一个边框，例如：<code>$$\boxed&#123;E=mc^2&#125;$$</code>。</li><li>在Markdown中，<code># $ &amp; ~ _ ^ \ &#123; &#125; %</code>等字符具有特殊意义，如果需要在公式中使用这些字符，需要进行转义，即在字符前加上<code>\</code>。</li><li>支持上标、下标、根号、分数、括号、常规运算符、特殊运算符、箭头、省略号等数学符号和命令。</li></ul></li><li><p><strong>图表绘制</strong></p><ul><li>流程图绘制：可以使用Mermaid等语法绘制流程图，用于描述业务流程、算法流程等。</li><li>甘特图绘制：使用Mermaid等语法绘制甘特图，用于呈现项目各阶段的时间安排和先后顺序。</li><li>时序图绘制：可以使用PlantUML等语法绘制时序图，用于描述不同对象之间的交互顺序和消息传递情况。</li></ul></li><li><p><strong>HTML元素</strong></p><ul><li>Markdown支持内联HTML，这意味着可以在Markdown文档中直接使用HTML标签。</li></ul></li><li><p><strong>脚注</strong></p><ul><li>脚注是对文本的补充说明，一些Markdown解析器支持脚注功能。</li></ul></li><li><p><strong>折叠内容</strong></p><ul><li>一些Markdown编辑器支持折叠内容功能，允许隐藏或展开部分文本。</li></ul></li><li><p><strong>定义列表</strong></p><ul><li>定义列表在标准的Markdown中不被支持，但在一些变体中可以使用，格式为术语在前，后面紧跟冒号，然后是对该术语的解释。</li></ul></li></ol><p>这些语法使得Markdown能够创建格式丰富、结构清晰的文档，并且这些文档可以很容易地被转换成HTML格式进行展示。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《机器学习》读书笔记（一）</title>
+      <link href="/2025/02/06/ji-qi-xue-xi-du-shu-bi-ji-yi/"/>
+      <url>/2025/02/06/ji-qi-xue-xi-du-shu-bi-ji-yi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="概念了解："><a href="#概念了解：" class="headerlink" title="概念了解："></a>概念了解：</h2><p>要进行机器学习，先要有数据。假定我们收集了一批关于西瓜的数据，例如（色泽&#x3D;青绿；根蒂&#x3D;蜷缩；敲声&#x3D;浊响），（色泽&#x3D;乌黑；根蒂&#x3D;稍蜷；敲声&#x3D;沉闷），（色泽&#x3D;浅白；根蒂&#x3D;硬挺；敲声&#x3D;清脆），……，每对括号内是一条记录，意思是“取值为这组记录的集合称为一个“数据集”（dataset），其中每条记录是关于一个事件或对象（这里是一个西瓜）的描述，称为一个“示例”（instance）或“样本”（sample）。反映事件或对象在某方面的表现或性质的事项，例如“色泽”“根蒂”“敲声”称为“属性”（attribute）或“特征”（feature）；属性上的取值，例如“青绿”“乌黑”称为“属性值”（attributevalue）。属性张成的空间称为“属性空间”（attributespace）、“样本空间”（samplespace）或“输入空间”。例如我们把“色泽”“根蒂”“敲声”作为三个坐标轴，则它们张成一个用于描述西瓜的三维空间，每个西瓜都可在这个空间中找到自己的坐标位置。由于空间中的每个点对应一个坐标向量，因此我们也把一个示例称为一个“特征向量”（featurevector）。</p><h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><p>泛指从数据中学得的结果。有文献用“模型”指全局性结果（例如一棵决策树）</p><h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><p>用“模式”指局部性结果（例如一条规则）</p><hr><h3 id="专业术语"><a href="#专业术语" class="headerlink" title="专业术语"></a>专业术语</h3><p><strong>数据集</strong><br><strong>示例</strong><br><strong>样本</strong><br><strong>属性</strong><br><strong>特征</strong><br><strong>属性值</strong><br><strong>属性空间</strong><br><strong>样本空间</strong><br><strong>特征向量</strong></p><p>从数据中学得模型的过程称为“学习”（learning）或“训练”（training），这个过程通过执行某个学习算法来完成。</p><p><strong>过拟合</strong><br>最常见的情况是由于学习能力过于强大,以至于把训练样本所包含的不太一般的特性都学到了<br><strong>欠拟合</strong><br>通常是由于学习能力低下而造成的</p><p><strong>训练集</strong><br><strong>测试集</strong></p><h3 id="性能评估"><a href="#性能评估" class="headerlink" title="性能评估"></a>性能评估</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>杂记1</title>
+      <link href="/2024/04/09/za-ji-1/"/>
+      <url>/2024/04/09/za-ji-1/</url>
+      
+        <content type="html"><![CDATA[<p>古话说：望子成龙，其实是对自己投资的热切期盼。养孩子，是作为投资还是消费，这是一个问题，如果是投资，你就一直担心其会不会慢慢变成垃圾股，然后就非常焦虑，如果是当作“消费品”，是生活的一种调剂品，从他们那里获取快乐和爱，那就开了一扇窗，生活到处都是光。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于规模效应的思考</title>
       <link href="/2024/03/18/guan-yu-gui-mo-xiao-ying-de-si-kao/"/>
       <url>/2024/03/18/guan-yu-gui-mo-xiao-ying-de-si-kao/</url>
